@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #5bc0de;
+}
+.header .logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.header .nav-banner {
+  height: 60px;
+  width: 500px;
+  padding: 8px;
+  margin-left: 27px;
+  float: left;
+  border-bottom: 0px solid #ddd;
+}
+.header .nav-banner li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
+td {
+  text-align: center;
+  padding: 0;
+}
+td .btn_noborder {
+  border: none;
+}
+td .btn_noborder .del_color {
+  color: #b22422;
+}
+.center_th {
+  text-align: center;
+}
+.page_list {
+  width: 30%;
+  margin: 0 auto;
+}
+.page_list li.now_page {
+  float: none;
+}
+.content {
+  margin: 10px auto;
+  height: 500px;
+  width: 1200px;
+  display: block;
+  padding: 0;
+}
+.content li.manager_user,
+.content li.manager_search_info,
+.content li.job_manager,
+.content li.system_manager {
+  display: none;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.content li.manager_user .manager_user,
+.content li.manager_search_info .manager_user,
+.content li.job_manager .manager_user,
+.content li.system_manager .manager_user {
+  background-color: #c7c7c7;
+}
+.content li.manager_user .manager_user .pageinfo,
+.content li.manager_search_info .manager_user .pageinfo,
+.content li.job_manager .manager_user .pageinfo,
+.content li.system_manager .manager_user .pageinfo {
+  float: left;
+}
+.content li.manager_user .manager_user .input_page,
+.content li.manager_search_info .manager_user .input_page,
+.content li.job_manager .manager_user .input_page,
+.content li.system_manager .manager_user .input_page {
+  border: 1px solid;
+  border-color: #cccccc;
+  height: 34px;
+  border-radius: 4px;
+}
+.content li.manager_user .manager_user .turn_button,
+.content li.manager_search_info .manager_user .turn_button,
+.content li.job_manager .manager_user .turn_button,
+.content li.system_manager .manager_user .turn_button {
+  float: left;
+}
+.content li.manager_user .manager_search_info,
+.content li.manager_search_info .manager_search_info,
+.content li.job_manager .manager_search_info,
+.content li.system_manager .manager_search_info {
+  float: right;
+}
+.content li.manager_user .manager_search_info .btn_left,
+.content li.manager_search_info .manager_search_info .btn_left,
+.content li.job_manager .manager_search_info .btn_left,
+.content li.system_manager .manager_search_info .btn_left {
+  border-left: none;
+  border-radius: 0;
+}
+.content li.manager_user .job_manager,
+.content li.manager_search_info .job_manager,
+.content li.job_manager .job_manager,
+.content li.system_manager .job_manager {
+  background-color: #84c326;
+}
+.content li.manager_user .jobListBtn,
+.content li.manager_search_info .jobListBtn,
+.content li.job_manager .jobListBtn,
+.content li.system_manager .jobListBtn {
+  width: 30%;
+  background-color: rgba(51, 51, 51, 0.12);
+}
+.content li.manager_user .jobListBtn:hover,
+.content li.manager_search_info .jobListBtn:hover,
+.content li.job_manager .jobListBtn:hover,
+.content li.system_manager .jobListBtn:hover {
+  background-color: rgba(28, 154, 13, 0.5);
+}
+.content li.manager_user #jobPageList,
+.content li.manager_search_info #jobPageList,
+.content li.job_manager #jobPageList,
+.content li.system_manager #jobPageList {
+  width: 20%;
+  margin: 0 auto;
+}
+.content li.manager_user #jobPageList .btn_last_page:focus,
+.content li.manager_search_info #jobPageList .btn_last_page:focus,
+.content li.job_manager #jobPageList .btn_last_page:focus,
+.content li.system_manager #jobPageList .btn_last_page:focus {
+  background-color: white;
+  border-color: #cccccc;
+  outline: none;
+}
+.content li.manager_user #jobPageList .btn_next_page:focus,
+.content li.manager_search_info #jobPageList .btn_next_page:focus,
+.content li.job_manager #jobPageList .btn_next_page:focus,
+.content li.system_manager #jobPageList .btn_next_page:focus {
+  background-color: white;
+  border-color: #cccccc;
+  outline: none;
+}
+.content li.manager_user .system_manager,
+.content li.manager_search_info .system_manager,
+.content li.job_manager .system_manager,
+.content li.system_manager .system_manager {
+  background-color: black;
+}
+.content li.active {
+  display: block;
+}
+.content .page_list {
+  padding: 0;
+  margin: 10px auto;
+  height: 50px;
+  width: 100%;
+}

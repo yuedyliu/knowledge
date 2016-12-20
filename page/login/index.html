@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinWei Job </title>
+
+    <!--外部css样式-->
+    <link href="../../lib/css/bootstrap.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #c7c7c7">
+
+<div id="header">
+    <h3>卡片样式实现</h3>
+</div>
+<div class="wrap">
+    <div class="back-header">
+        <ul class="ul-form">
+            <li class="active" data-index="0">
+                <div class="text-height-center">Login</div>
+            </li>
+            <li data-index="1">
+                <div class="text-height-center">Register</div>
+            </li>
+            <li class="last" data-index="2">
+                <div class="text-height-center">Reset Password</div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <ul class="back-content">
+        <!--Login-->
+        <li class="active">
+            <div>
+                <h2>Welcome Login</h2>
+            </div>
+            <div class="content">
+                <form class="form-horizontal " role="form">
+                    <div class="form-group form-group-center form-group-top">
+                        <input type="text" class="input form-control input-item"
+                               placeholder="Username" id="nick_name">
+                    </div>
+                    <div class="form-group form-group-center">
+                        <input type="password" class="input form-control input-item " id="login_password"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group form-group-center">
+                        <div class="cols-center">
+                            <button type="button" class="btn btn-default button-length-left" id="submit_login_info">Sign in</button>
+                            <button type="reset" class="btn btn-default button-length-right">Reset</button>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </li>
+
+        <!--Register-->
+        <li>
+            <div>
+                <h2>Welcome to Join us</h2>
+            </div>
+            <div class="content">
+                <form class="form-horizontal " role="form">
+                    <div class="form-group form-group-center form-group-top">
+                        <input type="text" class="input form-control input-item"
+                               placeholder="Username" id="register_nick_name">
+                    </div>
+                    <div class="form-group form-group-center">
+                        <input type="password" class="input form-control input-item " id="register_password"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group form-group-center form-group-top">
+                        <input type="text" class="input form-control input-item"
+                               placeholder="Username">
+                    </div>
+                    <div class="form-group form-group-center form-group-top">
+                        <input type="text" class="input form-control input-item"
+                               placeholder="Username">
+                    </div>
+
+                    <div class="form-group form-group-center">
+                        <div class="cols-center">
+                            <button type="submit" class="btn btn-default button-length-left">Sign up</button>
+                            <button type="reset" class="btn btn-default button-length-right">Reset</button>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </li>
+
+        <!--Reset Password-->
+        <li>
+            <div>
+                <h2>Reset Password</h2>
+            </div>
+            <div class="content">
+                <form class="form-horizontal " role="form">
+                    <div class="form-group form-group-center form-group-top">
+                        <input type="email" class="input form-control input-item" id="inputEmail3"
+                               placeholder="Email">
+                    </div>
+                    <div class="form-group form-group-center">
+                        <input type="text" class="input form-control input-item " id="reset_password"
+                               placeholder="Password">
+                    </div>
+
+
+                    <div class="form-group form-group-center">
+                        <div class="cols-center">
+                            <button type="submit" class="btn btn-default button-length-left">Send</button>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+</div>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="../../lib/js/md5.min.js"></script>
+<script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<table class="table table-hover">
+    <thead>
+    <th class="center_th">兼职名称</th>
+    <th class="center_th">人数情况</th>
+    <th class="center_th">地点</th>
+    <th class="center_th">日期</th>
+    <th class="center_th">薪酬</th>
+    <th class="center_th">操作</th>
+    </thead>
+    <tbody>
+    {{each entry as item i}}
+    <tr>
+        <td>{{item.title}}</td>
+        <td>{{item.num_situation}}</td>
+        <td>{{item.location}}</td>
+        <td>{{item.date}}</td>
+        <td>{{item.salary}}</td>
+        <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-group-xs jobListBtn">详情</button>
+                <button type="button" class="btn btn-group-xs jobListBtn">过期</button>
+                <button type="button" class="btn btn-group-xs jobListBtn">新增</button>
+            </div>
+        </td>
+    </tr>
+    {{/each}}
+    </tbody>
+
+</table>

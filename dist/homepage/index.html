@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinWei Job</title>
+
+    <!--外部css样式-->
+    <link href="./index.css" rel="stylesheet">
+    <link href="../../lib/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">
+    </div>
+    <ul class="nav nav-tabs nav-banner">
+        <li role="presentation" class="active licenter" data-index="0"><a class="dis-center" href="#">用户管理</a></li>
+        <li role="presentation" data-index="1"><a href="#">兼职管理</a></li>
+        <li role="presentation" data-index="2"><a href="#">系统配置</a></li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<ul class="content">
+    <li class="manager_user active ">
+        <div class="btn-group btn_manager_user">
+            <button type="button" class="btn btn-default">添加用户</button>
+            <button type="button" class="btn btn-default">Excel导入</button>
+        </div>
+        <table class="manager_search_info">
+            <tr>
+                <td>
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="输入姓名或工作号">
+                    </div>
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn_left">添加用户</button>
+                        <button type="button" class="btn btn-default">Excel导入</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="user_info_table"></div>
+        <div class="page_list" id="show_page_list"></div>
+    </li>
+    <li class="job_manager">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">新增职位</button>
+            <button type="button" class="btn btn-default">Excel导出</button>
+        </div>
+        <div id="show_job_list"></div>
+        <div id="jobPageList">
+            <button class="btn btn-default btn_last_page" id="lastJobListPage">上一页</button>
+            <button class="btn btn-default btn_next_page" id="nextJobListPage">下一页</button>
+        </div>
+    </li>
+    <li class="system_manager ">
+        <span>system_manager</span>
+    </li>
+</ul>
+
+<script src="../../lib/js/jquery.min.js"></script>
+<script src="../../lib/js/jquery.cookie.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
